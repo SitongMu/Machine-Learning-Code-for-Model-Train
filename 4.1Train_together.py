@@ -7,7 +7,7 @@ from sklearn.utils import shuffle
 from sklearn.model_selection import train_test_split
 
 # Load data from Excel file
-excel_file_path = r'C:\Users\2816624M\Desktop\lab_tr1.xlsx'
+excel_file_path = r'C:\Users\lab_tr1.xlsx'
 sheet_name = 'Standardized_Data'  # Replace with the name of your data sheet
 data = pd.read_excel(excel_file_path, sheet_name='Standardized_Data')
 
@@ -69,7 +69,7 @@ model.save('horizontal1rmodel.keras')
 # test_df = pd.DataFrame(data=X_test, columns=['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7', 'V8'])
 
 # test_df['Situation'] = y_test.argmax(axis=1)
-# test_df.to_excel(r'C:\Users\2816624M\Desktop\8rd1verticalfullte.xlsx', index=False)
+# test_df.to_excel(r'C:\Users\8rd1verticalfullte.xlsx', index=False)
 
 # Predict category probabilities for test data
 category_probabilities_test = model.predict(X_test)
@@ -88,4 +88,4 @@ for i in range(num_categories):
     result_test_df[f'Probability_Category_{i}'] = category_probabilities_test[:, i]
 
 # Save the results for the test data to an Excel file
-result_test_df.to_excel(r'C:\Users\2816624M\Desktop\horizontal_te.xlsx', index=False)
+result_test_df.to_excel(r'C:\Users\horizontal_te.xlsx', index=False)
