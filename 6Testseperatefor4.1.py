@@ -6,7 +6,7 @@ from sklearn.metrics import confusion_matrix
 import seaborn as sns
 
 # Modify this variable to change the file path easily
-test_data_file_path = r'C:\Users\2816624M\Desktop\Timeline_1.xlsx'  # Update this path
+test_data_file_path = r'C:\Users\Timeline_1.xlsx'  # Update this path
 
 # Load the new test data
 test_data = pd.read_excel(test_data_file_path, sheet_name='Standardized_Data')
@@ -60,7 +60,7 @@ for i in range(cm_normalized.shape[0]):
                  color="white" if cm_normalized[i, j] > cm_normalized.max()/2. else "black")
 
 # Save the confusion matrix as a heatmap image
-plt.savefig(r'C:\Users\2816624M\Desktop\confusion_matrix_1.png', format='png')
+plt.savefig(r'C:\Users\confusion_matrix_1.png', format='png')
 plt.show()
 
 # Predict the labels for the new test data
@@ -76,5 +76,5 @@ output_df = pd.DataFrame({
 })
 
 # Save the DataFrame to an Excel file
-output_file_path = r'C:\Users\2816624M\Desktop\predictions.xlsx'  # Specify your desired file path
+output_file_path = r'C:\Users\predictions.xlsx'  # Specify your desired file path
 output_df.to_excel(output_file_path, index=False)
