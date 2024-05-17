@@ -2,7 +2,7 @@ This project contains a seven step process containing data colllection, standard
 
 1DataCollection is used to collect data from serial port and save them as an excel file.
 
-2-3COmbin&Generate&Standardisation is used to deal with collected data. The first and last part of the data will be cut to avoid redundant influence. The data will be combined together and standardized to convince the train and test actions later.
+2-3Combin&Generate&Standardisation is used to deal with collected data. The first and last part of the data will be cut to avoid redundant influence. The data will be combined together and standardized to convince the train and test actions later.
 
 4Train is used to train the model based on TensorFlow model and the data processed before.
 
