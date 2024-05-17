@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-base_path = r'C:\Users\2816624M\Desktop\EX02081' #The file path of the original files stored
+base_path = r'C:\Users\' #The file path of the original files stored
 file_names_Nopeo = ['Nopeo_1.xlsx', 'Nopeo_2.xlsx']  # Replace with your actual file names
 file_names_Zone1 = ['Zone1_1.xlsx', 'Zone1_2.xlsx']  # Replace with your actual file names
 file_names_Zone2 = ['Zone2_1.xlsx', 'Zone2_2.xlsx']  # Replace with your actual file names
