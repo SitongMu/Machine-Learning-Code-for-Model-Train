@@ -15,7 +15,7 @@ ser = serial.Serial(serial_port, baud_rate, timeout=timeout)
 # Function to save a chunk of data to an Excel file
 def save_data_to_excel(data_list, file_number):
     df = pd.DataFrame(data_list, columns=['V1', 'V2', 'V3', 'V4','V5', 'V6', 'V7', 'V8'])
-    output_excel_file = f'Zone4_{file_number}.xlsx'  # Unique file name
+    output_excel_file = f'_{file_number}.xlsx'  # Unique file name # File Category needed
     df.to_excel(output_excel_file, index=False)
     print(f"Data saved to {output_excel_file}")
 
