@@ -89,45 +89,45 @@ def combine_specific_files(directory_path, file_names, sheet_names, output_file)
 
 file_paths_Nopeo = [os.path.join(base_path, name) for name in file_names_Nopeo]
 combined_df = combine_excel_files(file_paths_Nopeo, skip_start_first=skip_first_nopeo, skip_end_last=skip_last_nopeo)
-output_file = r'C:\Users\2816624M\Desktop\Nopeo.xlsx'  # Modify this path and file name as needed
+output_file = r'C:\Users\Nopeo.xlsx'  # Modify this path and file name as needed
 combined_df.to_excel(output_file, index=False)
 print(f"Nopeo data saved to {output_file}")
 
 # List of file names, adjust these as per your actual file names
 file_paths_Zone1 = [os.path.join(base_path, name) for name in file_names_Zone1]
 combined_df = combine_excel_files(file_paths_Zone1, skip_start_first=skip_first_Zone1, skip_end_last=skip_last_Zone1)
-output_file = r'C:\Users\2816624M\Desktop\Zone1.xlsx'  # Modify this path and file name as needed
+output_file = r'C:\Users\Zone1.xlsx'  # Modify this path and file name as needed
 combined_df.to_excel(output_file, index=False)
 print(f"Zone1 data saved to {output_file}")
 
 
 file_paths_Zone2 = [os.path.join(base_path, name) for name in file_names_Zone2]
 combined_df = combine_excel_files(file_paths_Zone2, skip_start_first=skip_first_Zone2, skip_end_last=skip_last_Zone2)
-output_file = r'C:\Users\2816624M\Desktop\Zone2.xlsx'  # Modify this path and file name as needed
+output_file = r'C:\Users\Zone2.xlsx'  # Modify this path and file name as needed
 combined_df.to_excel(output_file, index=False)
 print(f"Zone2 data saved to {output_file}")
 
 
 file_paths_Zone3 = [os.path.join(base_path, name) for name in file_names_Zone3]
 combined_df = combine_excel_files(file_paths_Zone3, skip_start_first=skip_first_Zone3, skip_end_last=skip_last_Zone3)
-output_file = r'C:\Users\2816624M\Desktop\Zone3.xlsx'  # Modify this path and file name as needed
+output_file = r'C:\Users\Zone3.xlsx'  # Modify this path and file name as needed
 combined_df.to_excel(output_file, index=False)
 print(f"Zone3 data saved to {output_file}")
 
 file_paths_Zone4 = [os.path.join(base_path, name) for name in file_names_Zone4]
 combined_df = combine_excel_files(file_paths_Zone4, skip_start_first=skip_first_Zone4, skip_end_last=skip_last_Zone4)
-output_file = r'C:\Users\2816624M\Desktop\Zone4.xlsx'  # Modify this path and file name as needed
+output_file = r'C:\Users\Zone4.xlsx'  # Modify this path and file name as needed
 combined_df.to_excel(output_file, index=False)
 print(f"Zone4 data saved to {output_file}")
 
-directory_path = r'C:\Users\2816624M\Desktop' # Your directory path
+directory_path = r'C:\Users\Desktop' # Your directory path
 output_file = 'horizontal_tr.xlsx'
 combine_specific_files(directory_path, file_names, sheet_names_combine, output_file)
 print(f"Combination file saved as {output_file}")
 
 
 # Load the Excel file
-file_path = f'C:/Users/2816624M/Desktop/horizontal_tr.xlsx'  # Replace with your Excel file path
+file_path = f'C:/Users/horizontal_tr.xlsx'  # Replace with your Excel file path
 xl = pd.ExcelFile(file_path)
 
 # Read the 'Nopeo' sheet
@@ -157,7 +157,7 @@ with pd.ExcelWriter(file_path, engine='openpyxl', mode='a') as writer:
 
 print('Normalization complete and data combined in a new sheet called "Standardized_Data".')
 
-file_path = f'C:/Users/2816624M/Desktop/horizontal_tr.xlsx'  # Replace with your file path
+file_path = f'C:/Users/horizontal_tr.xlsx'  # Replace with your file path
 excel_data = pd.read_excel(file_path, sheet_name=None)  # Load all sheets
 excel_data['Standardized_Data']['Situation'] = excel_data['Standardized_Data']['Situation'].replace(replacements)
 with pd.ExcelWriter(file_path) as writer:
