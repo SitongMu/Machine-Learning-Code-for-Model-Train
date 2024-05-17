@@ -38,11 +38,11 @@ def predict_and_store_results(model, X_test, y_test, filename):
 
 
 # Load training data
-excel_file_path = f'C:/Users/2816624M/Desktop/{Trainfile_name}.xlsx'  # Update with your training file path
+excel_file_path = f'C:/Users/{Trainfile_name}.xlsx'  # Update with your training file path
 data = pd.read_excel(excel_file_path, sheet_name='Standardized_Data')
 
 # Load external test data
-test_file_path = f'C:/Users/2816624M/Desktop/{Testfile_name}.xlsx'  # Update this with the path to your test file
+test_file_path = f'C:/Users/{Testfile_name}.xlsx'  # Update this with the path to your test file
 test_data = pd.read_excel(test_file_path, sheet_name='Standardized_Data')
 
 # Define all columns and categories
