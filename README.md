@@ -10,4 +10,4 @@ This project contains a seven step process containing data colllection, standard
 
 6Testseperate is used to test the accuracy of the model with a seperate test file.
 
-7Auto Train is used to check the difference with different combinations of the inputs.
+7Auto Train is used to auto train and test the model with changing of the input number.
